@@ -1,0 +1,28 @@
+<html>
+    <head> </head>
+    <body>
+        <script>
+            //Callback Function Example - 
+            function greet(){
+                var name = "abc";
+                console.log("first line of greet fn");
+                console.log("Hello World");
+
+                console.log("before calling callback fn");
+
+                //Callback fn only executed after greet() is executed
+                sayName(name);
+                console.log("after calling callback fn")
+            }
+
+            //Callback Fn
+            function sayName(name){
+                console.log("Hello" + " " + name);
+                console.log("In callback function");
+            }
+
+            //callling the function after 2 seconds
+            setTimeout(greet, 2000);
+            </script>
+        </body>
+    </html>

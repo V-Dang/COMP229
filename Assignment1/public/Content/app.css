@@ -1,0 +1,24 @@
+/* Vivian Dang 301178335 Oct 2 2022 */
+h1{
+    text-align: center;
+}
+
+.center{
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    padding:20px;
+}
+
+p{
+    width: auto;
+    border: 2px solid pink;
+    border-radius:30px;
+    padding: 20px;
+}
+
+.container2 {
+    margin-right: 15%;
+    margin-left: 15%;
+    margin-bottom: 5%;
+}
