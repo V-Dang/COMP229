@@ -1,0 +1,23 @@
+<html>
+    <head> </head>
+    <body>
+        <script>
+            //Callback Function Example - Synchronous
+            function greet(name, myFunction){
+                console.log("Hello World");
+
+                //Callback fn only executed after greet() is executed
+                myFunction(name);
+            }
+
+            //Callback Fn
+            function sayName(name){
+                console.log("Hello" + " " + name);
+                console.log("In callback function");
+            }
+
+            //callling the function after 2 seconds
+            setTimeout(greet, 2000, "Abc", sayName);
+            </script>
+        </body>
+    </html>
